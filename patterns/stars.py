@@ -37,5 +37,23 @@ def rev_pyramid(a):
                 print(" ",end="")   
           print("\n")
 rev_pyramid(a)
+
+def diamond(a):
+    pattern(a)
+    rev_pyramid(a)
+print("diamond pattern")
+diamond(a)
+
+def arrow_head(a):
+    i=1
+    for i in range(2*a-1):
+        star=i
+        if (i>a):
+             star=2*a-i
+        for j in range(star):
+            print("*",end="")
+        print("\n")
+print("arrow head pattern")
+arrow_head(a)
      
 
