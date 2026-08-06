@@ -24,3 +24,18 @@ def pattern(a):
 a=int(input("enter a integer:"))
 pattern(a)
 
+def rev_pyramid(a):
+     for i in range(a):
+          #space
+          for j in range(i):
+               print(" ",end="")
+          #stars
+          for j in range(2*a-(2*i+1)):
+                print("*",end="")
+          #space
+          for j in range(i):
+                print(" ",end="")   
+          print("\n")
+rev_pyramid(a)
+     
+
