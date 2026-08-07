@@ -60,12 +60,13 @@ def right_angle_triangle(a):
      var=1
      for i in range(a):
           if(i%2==0):
-               var=0
+             var=1
           else:
-                var=1
-     for j in range(i):
-          print(var,end="")
-          var-=1
+              var=0
+          for j in range(i):
+             print(var,end="")
+             var=1-var
+          print("\n")
                
-               
+right_angle_triangle(a)   
 
