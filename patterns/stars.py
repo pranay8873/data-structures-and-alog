@@ -55,5 +55,17 @@ def arrow_head(a):
         print("\n")
 print("arrow head pattern")
 arrow_head(a)
-     
+#right angle triangle with 0 and 1
+def right_angle_triangle(a):
+     var=1
+     for i in range(a):
+          if(i%2==0):
+               var=0
+          else:
+                var=1
+     for j in range(i):
+          print(var,end="")
+          var-=1
+               
+               
 
