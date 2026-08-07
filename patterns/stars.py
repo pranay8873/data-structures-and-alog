@@ -72,14 +72,14 @@ right_angle_triangle(a)
 
 #square with hallow traingle
 def square_with_hallow_triangle(a):
-    for i in range (a):
+    for i in range (1,a+1):
          
      #numbers
-     for j in range(i):
+     for j in range(1,i+1):
         print(j,end="")
 
      #space
-     for j in range(a-2*i):
+     for j in range((a-i)*2):
         print(" ",end="")
 
 
