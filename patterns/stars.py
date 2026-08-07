@@ -89,3 +89,12 @@ def square_with_hallow_triangle(a):
      print("\n")
 print("square with hallow traingle pattern")
 square_with_hallow_triangle(a)
+
+def right_angle_triangle_num(a):
+        for i in range(a):
+            for j in range(i+1):
+                print(j+1,end="")
+            print("\n")
+
+print("right angle triangle with numbers")
+right_angle_triangle_num(a)
