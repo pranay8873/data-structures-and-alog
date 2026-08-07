@@ -70,3 +70,22 @@ def right_angle_triangle(a):
                
 right_angle_triangle(a)   
 
+#square with hallow traingle
+def square_with_hallow_triangle(a):
+    for i in range (a):
+         
+     #numbers
+     for j in range(i):
+        print(j,end="")
+
+     #space
+     for j in range(a-2*i):
+        print(" ",end="")
+
+
+     #numbers
+     for j in range(i,0,-1):
+        print(j,end="")
+     print("\n")
+print("square with hallow traingle pattern")
+square_with_hallow_triangle(a)
