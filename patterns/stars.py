@@ -122,7 +122,7 @@ def right_angle_tri_with_alpha_2(a):
    ch='A'
 
    for i in range(a):
-       for j in range(a-i):
+       for j in range(i+1):
               print(ch,end="")
        print("\n")
        ch=chr(ord(ch)+1)
