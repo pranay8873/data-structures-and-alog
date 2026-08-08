@@ -98,3 +98,15 @@ def right_angle_triangle_num(a):
 
 print("right angle triangle with numbers")
 right_angle_triangle_num(a)
+def right_angle_tri_with_alpha(a):
+   
+   for i in range(a):
+       ch='A'
+       for j in range(i):
+              print(ch,end="")
+              ch=chr(ord(ch)+1)
+       print("\n")
+print("right angle triangle with alphabets")
+right_angle_tri_with_alpha(a)
+
+       
