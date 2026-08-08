@@ -129,6 +129,25 @@ def right_angle_tri_with_alpha_2(a):
 
 print("right angle triangle with alphabets")
 right_angle_tri_with_alpha_2(a)
+def symmetrical_char_triangle(a):
+    # breakpoint=2*i+1/2
+    for i in range(a):
+        #space
+        for j in range(a-i-1):
+            print(" ",end="")
+
+        #character
+        for j in range(2*i+1):
+            print(chr(ord('A')+j),end="")
+
+        #space
+        for j in range(a-i-1):
+           print(" ",end="")
+
+        print("\n")
+print("symmetrical char triangle")
+symmetrical_char_triangle(a)
+
 
 
        
