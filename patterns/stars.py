@@ -102,11 +102,21 @@ def right_angle_tri_with_alpha(a):
    
    for i in range(a):
        ch='A'
-       for j in range(i):
+       for j in range(i+1):
               print(ch,end="")
               ch=chr(ord(ch)+1)
        print("\n")
 print("right angle triangle with alphabets")
 right_angle_tri_with_alpha(a)
+def rev_right_angle_tri_with_alpha(a):
+   
+   for i in range(a):
+       ch='A'
+       for j in range(a-i):
+              print(ch,end="")
+              ch=chr(ord(ch)+1)
+       print("\n")
+print("right angle triangle with alphabets")
+rev_right_angle_tri_with_alpha(a)
 
        
