@@ -147,6 +147,13 @@ def symmetrical_char_triangle(a):
         print("\n")
 print("symmetrical char triangle")
 symmetrical_char_triangle(a)
+def right_angle_triangle_rev_alphabets(a):
+    for i in range(a):
+        for j in range(ord('E')-i,ord('E')+1):
+            print(chr(j),end="")
+        print("\n")
+print("right angle triangle with reverse alphabets")
+right_angle_triangle_rev_alphabets(a)
 
 
 
