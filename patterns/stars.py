@@ -177,26 +177,27 @@ def star_square_with_hallow_daimond(a):
         print("\n")
         space+=2
 
+    space=2*a-2
+    for i in range(a):
+ 
+     
+        for j in range(i+1):
+             print("*",end="")
+ 
+ 
+ 
+        #space
+        for j in range(space-i*2):
+             print(" ",end="")
+ 
+ 
+ 
+         #star
+        for j in range(i+1):
+             print("*",end="")
+        print("\n")
+        # space-=2
 
-    #   else:
-    #        #star
-    #     for j in range(i+1):
-    #        print("*",end="")
-        
-        
-        
-    #            #space
-    #     for j in range(a-i-1):
-    #       print(" ",end="")
-        
-        
-        
-    #             #star
-    #     for j in range(i+1):
-    #         print("*",end="")
-    #     print("\n")
-        
-        
 
 
 print("star square with hallow diamond")
