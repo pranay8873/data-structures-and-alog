@@ -154,7 +154,45 @@ def right_angle_triangle_rev_alphabets(a):
         print("\n")
 print("right angle triangle with reverse alphabets")
 right_angle_triangle_rev_alphabets(a)
+def star_square_with_hallow_daimond(a):
+    for i in range(a):
+
+        #star
+        for j in range(a-i):
+            print("*",end="")
 
 
 
+       #space
+        for j in range(2*i):
+            print(" ",end="")
+
+
+
+        #star
+        for j in range(a-i):
+            print("*",end="")
+        print("\n")
+           #star
+        for j in range(a-i):
+           print("*",end="")
+        
+        
+        
+               #space
+        for j in range(2*i):
+          print(" ",end="")
+        
+        
+        
+                #star
+        for j in range(a-i):
+            print("*",end="")
+        print("\n")
+        
+        
+
+
+print("star square with hallow diamond")
+star_square_with_hallow_daimond(a)
        
