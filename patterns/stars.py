@@ -202,4 +202,25 @@ def star_square_with_hallow_daimond(a):
 
 print("star square with hallow diamond")
 star_square_with_hallow_daimond(a)
+def star_butterfly(a):
+    spaces=2*a-2
+    for i in range(2*a-1):
+        # star=i+1
+        if(i<a):
+            star=i+1
+        else:
+            star=2*a-i-1
+        for j in range(star):
+            print("*",end="")
+        for j in range(spaces):
+            print(" ",end="")
+        for j in range(star):
+            print("*",end="")
+        if(i<a-1):
+            spaces-=2
+        else:
+            spaces+=2
+        print("\n")
+print("star butterfly pattern")
+star_butterfly(a)
        
