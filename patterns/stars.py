@@ -232,3 +232,13 @@ def square2(a):
                 print(" ",end="")
         print("\n")
 square2(a)
+def pattern22(a):
+    for i in range(2*a-1):
+        for j in range(2*a-1):
+            top=i
+            bottom=j
+            left=2*a-2-i
+            right=2*a-2-j
+            print(a-min(min(top,bottom),min(left,right)),end=" ")
+        print()
+pattern22(a)
