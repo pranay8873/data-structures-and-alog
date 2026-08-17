@@ -223,7 +223,7 @@ def star_butterfly(a):
         print("\n")
 print("star butterfly pattern")
 star_butterfly(a)
-def square(a):
+def square2(a):
     for i in range(a):
         for j in range(a):
             if(j==0 or j==a-1 or i==0 or i==a-1):
@@ -231,4 +231,4 @@ def square(a):
             else:
                 print(" ",end="")
         print("\n")
-square(a)
+square2(a)
