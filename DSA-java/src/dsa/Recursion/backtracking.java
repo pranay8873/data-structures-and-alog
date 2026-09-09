@@ -18,6 +18,16 @@ public class backtracking {
         System.out.println(i);
 
     }
+    void sum_n(int i,int sum){
+        if(i<1){
+            System.out.println(sum);
+            return;
+        }
+        sum_n(i-1,sum+i);
+    }
+
+
+
     void main(){
         Scanner sc=new Scanner(System.in);
 //        System.out.println("Enter number : ");
@@ -25,6 +35,7 @@ public class backtracking {
 //        one_to_n(num,num);
         System.out.println("Enter number : ");
         int num= sc.nextInt();
-        n_to_one(0,num);
+//        n_to_one(0,num);
+        sum_n(num,0);
     }
 }
