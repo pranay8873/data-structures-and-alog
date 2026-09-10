@@ -69,7 +69,11 @@ public class backtracking {
         }
         return palindrome_string(i+1,name);
     }
-
+    int fibonaci_number(int n,int i,int sum){
+        if(i>n) return sum;
+        sum+=i;
+        return fibonaci_number(n,i+1,sum);
+    }
 
 
 
@@ -102,15 +106,19 @@ public class backtracking {
 //        int[] reversed_array=rev_array(numbers,0);
 //         int[] reversed_array=rev_array2(array,0,array.length);
 //        System.out.println("original array :"+ Arrays.toString(numbers2)+"\nreversed array : "+Arrays.toString(reversed_array));
-          System.out.println("Enter the String : ");
-          String name= sc.nextLine();
-          char[] name_arr=name.toCharArray();
-          boolean palindrome=palindrome_string(0,name_arr);
-          if(palindrome)
-              System.out.println("Given String is a palindrome");
-          else
-              System.out.println("Given String is not a palindrome");
+//          System.out.println("Enter the String : ");
+//          String name= sc.nextLine();
+//          char[] name_arr=name.toCharArray();
+//          boolean palindrome=palindrome_string(0,name_arr);
+//          if(palindrome)
+//              System.out.println("Given String is a palindrome");
+//          else
+//              System.out.println("Given String is not a palindrome");
 //            sum_n_fun(5);
+        System.out.println("Enter n for fibonaci series : ");
+        int n=sc.nextInt();
+        int num=fibonaci_number(n,0,0);
+        System.out.println("fibonacci series upto "+n+"are : "+num);
 
 //
 
