@@ -59,6 +59,16 @@ public class backtracking {
         array[n-i-1]=temp;
         return rev_array2(array,i+1,array.length);
     }
+    boolean palindrome_string(int i,String[] name){
+        if(i>=name.length/2){
+            return true;
+        }
+
+        if(name[i] != (name[name.length-i-1])){
+            return false;
+        }
+        palindrome_string(i+1,name);
+    }
 
 
 
@@ -75,14 +85,36 @@ public class backtracking {
 //        int num2=sum_n_fun(num);
 //        double num2=factorial(num);
 //        System.out.println(num2);
-        int[] numbers={1,2,3,4,5,5,5};
-        int[] numbers2=Arrays.copyOf(numbers,numbers.length);
+//        System.out.println("Enter size of array : ");
+//        int n= sc.nextInt();
+//        int[] array=new int[n];
+//        System.out.println("Enter Array elements");
+//        for (int i=0;i<n;i++){
+//            array[i]= sc.nextInt();
+//        }
+        
+
+//        int[] numbers2=Arrays.copyOf(array,array.length);
 //        for (int number :numbers){
 //            System.out.println(number);
 //        }
 //        System.out.println(numbers.length);
 //        int[] reversed_array=rev_array(numbers,0);
-         int[] reversed_array=rev_array2(numbers,0,numbers.length);
-        System.out.println("original array :"+ Arrays.toString(numbers2)+"\nreversed array : "+Arrays.toString(reversed_array));
+//         int[] reversed_array=rev_array2(array,0,array.length);
+//        System.out.println("original array :"+ Arrays.toString(numbers2)+"\nreversed array : "+Arrays.toString(reversed_array));
+//          System.out.println("Enter the String : ");
+//          String name= sc.nextLine();
+//          char[] name_arr=name.toCharArray();
+//          boolean palindrome=palindrome_string(0,
+//
+//                  name_arr);
+//          if(palindrome)
+//              System.out.println("Given String is a palindrome");
+//          else
+//              System.out.println("Given String is not a palindrome");
+            sum_n_fun(5);
+
+//
+
     }
 }
