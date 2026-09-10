@@ -59,7 +59,7 @@ public class backtracking {
         array[n-i-1]=temp;
         return rev_array2(array,i+1,array.length);
     }
-    boolean palindrome_string(int i,String[] name){
+    boolean palindrome_string(int i,char[] name){
         if(i>=name.length/2){
             return true;
         }
@@ -67,7 +67,7 @@ public class backtracking {
         if(name[i] != (name[name.length-i-1])){
             return false;
         }
-        palindrome_string(i+1,name);
+        return palindrome_string(i+1,name);
     }
 
 
@@ -102,17 +102,15 @@ public class backtracking {
 //        int[] reversed_array=rev_array(numbers,0);
 //         int[] reversed_array=rev_array2(array,0,array.length);
 //        System.out.println("original array :"+ Arrays.toString(numbers2)+"\nreversed array : "+Arrays.toString(reversed_array));
-//          System.out.println("Enter the String : ");
-//          String name= sc.nextLine();
-//          char[] name_arr=name.toCharArray();
-//          boolean palindrome=palindrome_string(0,
-//
-//                  name_arr);
-//          if(palindrome)
-//              System.out.println("Given String is a palindrome");
-//          else
-//              System.out.println("Given String is not a palindrome");
-            sum_n_fun(5);
+          System.out.println("Enter the String : ");
+          String name= sc.nextLine();
+          char[] name_arr=name.toCharArray();
+          boolean palindrome=palindrome_string(0,name_arr);
+          if(palindrome)
+              System.out.println("Given String is a palindrome");
+          else
+              System.out.println("Given String is not a palindrome");
+//            sum_n_fun(5);
 
 //
 
