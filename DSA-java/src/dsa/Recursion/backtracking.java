@@ -69,11 +69,11 @@ public class backtracking {
         }
         return palindrome_string(i+1,name);
     }
-//    int fibonaci_number(int i){
-//        if(i==0) return 0;
-//
-////        return fibonaci_number(n,i+1,sum);
-//    }
+    int fibonaci_number(int n){
+        if(n<=1) return n;
+
+        return fibonaci_number(n-1)+fibonaci_number(n-2);
+    }
 
 
 
@@ -119,15 +119,17 @@ public class backtracking {
         int n=sc.nextInt();
 //        int num=fibonaci_number(n,0,0);
 //        System.out.println("fibonacci series upto "+n+"are : "+num);
-          int[] arr=new int[n];
-          arr[0]=0;
-          arr[1]=1;
-          for (int i=2;i<n;i++){
-              arr[i]=arr[i-1]+arr[i-2];
-          }
-        System.out.println(arr[n-1]);
 
-//
+//          fibonacci using for loop
+//          int[] arr=new int[n];
+//          arr[0]=0;
+//          arr[1]=1;
+//          for (int i=2;i<n;i++){
+//              arr[i]=arr[i-1]+arr[i-2];
+//          }
+//        System.out.println(arr[n-1]);
+        int n2=fibonaci_number(n);
+        System.out.println(n2);
 
     }
 }
