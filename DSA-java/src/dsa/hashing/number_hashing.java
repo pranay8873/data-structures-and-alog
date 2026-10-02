@@ -14,7 +14,7 @@ public class number_hashing {
             array[i]= sc.nextInt();
         }
         System.out.println("Array is : "+ Arrays.toString(array));
-        int[] hash=new int[100000];
+        int[] hash=new int[100000000];
 //        hash={0};
         for(int i=0;i<size;i++){
             hash[array[i]]+=1;
