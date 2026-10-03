@@ -8,6 +8,15 @@ public class Reverse_array {
 //        int length=array.length;
 //
 //    }
+        void rev(int[] array,int i){
+            if(i>=array.length/2)
+                return;
+            int temp=array[i];
+            array[i]=array[array.length-i-1];
+            array[array.length-i-1]=temp;
+            rev(array,i+1);
+
+        }
 
 
     void main() {
@@ -20,16 +29,8 @@ public class Reverse_array {
             array[i]=sc.nextInt();
         }
         System.out.println("Array is : "+ Arrays.toString(array));
-        void rev(int i){
-            if(i>=n/2)
-                return;
-            int temp=array[i];
-            array[i]=array[n-i-1];
-            array[n-1-1]=temp;
-            return rev(i+1);
 
-        }
-        rev(0);
+        rev(array,0);
         System.out.println(Arrays.toString(array));
     }
 }
