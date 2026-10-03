@@ -40,7 +40,7 @@ public class GCD {
         int gcd=GCD1(10,20);
          System.out.println(gcd);
          int gcd2=GCD2(10,20);
-         System.out.println("Gcd using euclidian algorithm : "+gcd2);
+         System.out.println("Gcd of 10 and 20 using euclidian algorithm : "+gcd2);
 
     }
 }
