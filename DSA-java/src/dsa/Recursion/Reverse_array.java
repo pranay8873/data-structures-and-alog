@@ -17,6 +17,15 @@ public class Reverse_array {
             rev(array,i+1);
 
         }
+        void  rev2(int[] array,int l,int r){
+            if(l>=r)
+                return;
+            int temp=array[r];
+            array[r]=array[l];
+            array[l]=temp;
+            rev2(array,l+1,r-1);
+        }
+
 
 
     void main() {
@@ -30,7 +39,8 @@ public class Reverse_array {
         }
         System.out.println("Array is : "+ Arrays.toString(array));
 
-        rev(array,0);
-        System.out.println(Arrays.toString(array));
+//        rev(array,0);
+        rev2(array,0,array.length-1);
+        System.out.println("Reveresed array is : "+Arrays.toString(array));
     }
 }
