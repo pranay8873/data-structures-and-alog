@@ -18,9 +18,24 @@ public class Selection_Sort {
         }
         return array;
     }
+    int[] selsortmax(int[] array){
+        int n=array.length;
+        for(int i=0;i<n-1;i++){
+            int max=i;
+            for(int j=i+1;j<n;j++){
+                if(array[j]>array[max])
+                    max=j;
+            }
+            int temp=array[i];
+            array[i]=array[max];
+            array[max]=temp;
+
+        }
+        return array;
+    }
 
     void main() {
      int[] array={1,10,20,3,5,500,15,0,2,5};
-        System.out.println(Arrays.toString(selsort(array)));
+        System.out.println(Arrays.toString(selsortmax(array)));
     }
 }
