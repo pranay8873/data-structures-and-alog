@@ -6,18 +6,18 @@ public class Bubble_Sort {
     int[] bubsorass(int[] array){
         int n=array.length;
         for(int i=n-1;i>=1;i--){
-            int swap=0;
+//            int swap=0;
             for (int j=0;j<i;j++){
                 if(array[j]>array[j+1]){
                     int temp=array[j];
                     array[j]=array[j+1];
                     array[j+1]=temp;
-                    swap=1;
+//                    swap=1;
                 }
 
             }
-            if(swap==0)
-                break;
+//            if(swap==0)
+//                break;
             System.out.println("runs");
 
         }
