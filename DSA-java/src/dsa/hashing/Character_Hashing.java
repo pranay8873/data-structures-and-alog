@@ -43,4 +43,11 @@ public class Character_Hashing {
 
         }
     }
+//    static void main(){
+//        int[] hashes=new int[100];
+//        char a='a';
+//        hashes[a]=10;
+//        System.out.println(hashes[a]);
+//    }
+
 }
