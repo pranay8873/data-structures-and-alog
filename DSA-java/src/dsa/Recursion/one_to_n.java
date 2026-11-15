@@ -16,11 +16,11 @@ public class one_to_n {
 
 
     }
-    int factorial(int n){
-        if(n==1){
-
-        }
-    }
+//    int factorial(int n){
+//        if(n==1){
+//
+//        }
+//    }
 
     static void main() {
         one_to_n n=new one_to_n();
