@@ -6,7 +6,7 @@ public class Customer {
     private int id;
     private String name;
     private String email;
-    private long phoneno.;
+    private long phoneno;
     private float balance;
 
     public int getId() {
