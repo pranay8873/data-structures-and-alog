@@ -1,5 +1,8 @@
 package fundamentals.abstraction.collections.sets;
 
+import fundamentals.abstraction.collections.comparators.Product_ID_Comparator;
+import fundamentals.abstraction.collections.comparators.Product_Name_Comparator;
+
 import java.util.*;
 
 public class Sets {
@@ -8,7 +11,7 @@ public class Sets {
     static void main() {
 //        Set products=new HashSet<>();
 //        Set products=new LinkedHashSet();
-        Set<product> products=new TreeSet<>();
+        Set<product> products=new TreeSet<>(new Product_ID_Comparator());
         product p1=new product();
         p1.setId(10);
         p1.setName("x apple ipad");

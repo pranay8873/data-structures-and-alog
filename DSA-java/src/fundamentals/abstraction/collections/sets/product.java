@@ -2,7 +2,7 @@ package fundamentals.abstraction.collections.sets;
 
 import java.util.Objects;
 
-class product implements Comparable<product> {
+public class product implements Comparable<product> {
     private int id;
     private String name;
     private float cost;
