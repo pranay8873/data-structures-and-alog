@@ -24,10 +24,12 @@ public class Arrays_problems {
             arr[i-d]=arr[i];
 
         }
-        int j=0;
+//        int j=0;
         for (int i=len-d;i<len;i++){
-            arr[i]=temp[j];
-            j++;
+//            arr[i]=temp[j];
+            arr[i]=temp[i-(len-d)];
+
+//            j++;
         }
 
 
