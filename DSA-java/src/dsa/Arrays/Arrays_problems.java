@@ -34,10 +34,26 @@ public class Arrays_problems {
 
 
     }
+    static void Left_rot_n2(int[] arr,int len,int n){
+        n=n%len;
+        Reverse_Array(arr,0,len-n-1);
+        Reverse_Array(arr,len-n,len-1);
+        Reverse_Array(arr,0,len-1);
+    }
+    static void Reverse_Array(int[] arr,int start,int end){
+        while (start<=end){
+            int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
+        }
+    }
 
     static void main() {
         int[] numbers={10,20,30,40,50,60};
-        Left_rot_n(numbers,4);
+//        Left_rot_n(numbers,4);
+        Left_rot_n2(numbers,numbers.length,305);
         System.out.println(Arrays.toString(numbers));
 
     }
