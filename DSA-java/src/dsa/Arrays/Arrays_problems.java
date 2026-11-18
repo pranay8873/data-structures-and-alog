@@ -49,12 +49,33 @@ public class Arrays_problems {
             end--;
         }
     }
+    static void move_Zeros_to_end(int[] arr){
+        int n=arr.length;
+        int[] temp=new int[n];
+        int ind=0;
+        for (int i=0;i<n;i++){
+            if(arr[i]!=0){
+                temp[ind]=arr[i];
+                ind++;
+            }
+        }
+        while (ind<n){
+            temp[ind]=0;
+            ind++;
+        }
+        for (int i=0;i<n;i++){
+            arr[i]=temp[i];
+        }
+    }
 
     static void main() {
         int[] numbers={10,20,30,40,50,60};
 //        Left_rot_n(numbers,4);
         Left_rot_n2(numbers,numbers.length,305);
         System.out.println(Arrays.toString(numbers));
+        int[] array={1,23,0,0,24,10,25,0,0,12};
+        move_Zeros_to_end(array);
+        System.out.println("Moved zeros to end : "+Arrays.toString(array));
 
     }
 }
