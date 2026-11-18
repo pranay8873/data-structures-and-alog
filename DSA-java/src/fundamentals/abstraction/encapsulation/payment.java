@@ -1,4 +1,4 @@
-package fundamentals.abstraction;
+package fundamentals.abstraction.encapsulation;
 
 public abstract class payment {
     boolean pay(double amount){

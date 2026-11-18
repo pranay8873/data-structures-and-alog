@@ -1,4 +1,4 @@
-package fundamentals.abstraction;
+package fundamentals.abstraction.encapsulation;
 
 public class Encapsulation {
     class student{

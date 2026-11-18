@@ -1,4 +1,4 @@
-package dsa;
+package dsa.maths;
 
 public class Main {
     boolean pal(String num,int i){
