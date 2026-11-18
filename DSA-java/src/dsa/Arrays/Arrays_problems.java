@@ -1,5 +1,6 @@
 package dsa.Arrays;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Arrays_problems {
@@ -67,6 +68,34 @@ public class Arrays_problems {
             arr[i]=temp[i];
         }
     }
+    static void move_Zeros_to_end2(int[] arr){
+        int j=-1;
+        for (int i=0;i<arr.length;i++){
+            if(arr[i]==0){
+                j=i;
+                break;
+            }
+        }
+        for (int i=j+1;i<arr.length;i++){
+            if(arr[i]!=0){
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                j++;
+            }
+
+        }
+    }
+    static int[] union(int[] arr1,int[] arr2){
+        Set<Integer> union=new TreeSet<>();
+        for (int i=0;i<arr1.length;i++){
+            union.add(arr1[i]);
+        }
+        for (int i=0;i<arr2.length;i++){
+            union.add(arr2[i]);
+        }
+        return union.stream().mapToInt(Integer::intValue).toArray();
+    }
 
     static void main() {
         int[] numbers={10,20,30,40,50,60};
@@ -74,8 +103,9 @@ public class Arrays_problems {
         Left_rot_n2(numbers,numbers.length,305);
         System.out.println(Arrays.toString(numbers));
         int[] array={1,23,0,0,24,10,25,0,0,12};
-        move_Zeros_to_end(array);
+        move_Zeros_to_end2(array);
         System.out.println("Moved zeros to end : "+Arrays.toString(array));
+        System.out.println("union of "+Arrays.toString(numbers)+"& "+Arrays.toString(array)+" is "+Arrays.toString(union(numbers,array)));
 
     }
 }
