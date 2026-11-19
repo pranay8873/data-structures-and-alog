@@ -1,0 +1,21 @@
+id,name,maxRetailPrice,discountPercentage,isAvailable,company,category,manufacturedYear
+1001,iPad Air 11-inch,59999,8,True,Apple,Tablet,2025
+1002,MacBook Air M3,114900,5,True,Apple,Laptop,2024
+1003,Galaxy S25,80999,10,True,Samsung,Smartphone,2025
+1004,Galaxy Tab S10,64999,12,True,Samsung,Tablet,2024
+1005,Pixel 9,79999,7,True,Google,Smartphone,2024
+1006,Pixel Buds Pro 2,22900,15,True,Google,Audio,2024
+1007,IdeaPad Slim 5,74990,10,True,Lenovo,Laptop,2025
+1008,ThinkPad E14,89990,6,True,Lenovo,Laptop,2024
+1009,Sony WH-1000XM5,29990,20,True,Sony,Audio,2023
+1010,PlayStation 5 Slim,54990,5,True,Sony,Gaming,2023
+1011,OnePlus 13,69999,8,True,OnePlus,Smartphone,2025
+1012,OnePlus Pad 2,39999,10,False,OnePlus,Tablet,2024
+1013,Dell Inspiron 14,67990,12,True,Dell,Laptop,2024
+1014,Logitech MX Master 3S,9995,18,True,Logitech,Accessory,2022
+1015,Canon EOS R50,74995,7,True,Canon,Camera,2023
+1016,Nikon Z50,82995,9,False,Nikon,Camera,2022
+1017,JBL Flip 6,11999,22,True,JBL,Audio,2022
+1018,Garmin Forerunner 265,41990,11,True,Garmin,Wearable,2023
+1019,Acer Nitro V 15,84990,13,True,Acer,Laptop,2025
+1020,Kindle Paperwhite,15999,5,True,Amazon,E-reader,2024
