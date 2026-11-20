@@ -19,6 +19,8 @@ public class m {
         };
         hello.welcome();
         hello.welcome("Pranay");
+        Addition sum=(a,b)->a+b;
+        System.out.println("Functional Interface : "+sum.add(10,20));
 
     }
 }
