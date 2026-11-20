@@ -3,6 +3,8 @@ package fundamentals.abstraction.streams;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class Streams {
     static void main() throws IOException {
@@ -23,6 +25,21 @@ public class Streams {
         for (Product product:filteredProducts){
             System.out.println(product);
         }
+        List<String> productnames=new ArrayList<>();
+        productnames=products.stream().map(Product::getName).toList();
+        for (String name:productnames){
+            System.out.println(name);
+        }
+//        Product p2=Product::new;
+        Predicate<Product> isExpensive=product -> product.getMaxRetailPrice()>80000;
+        for (Product pr:products){
+            System.out.println(pr.getName()+" isExpensive : "+isExpensive.test(pr));
+        }
+        Consumer<Product> prname=product -> System.out.println("name of product : "+product.getName());
+        for (Product pr:products){
+            prname.accept(pr);
+        }
+
 
     }
 }
