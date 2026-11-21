@@ -3,9 +3,11 @@ package fundamentals.abstraction.streams;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Streams {
     static void main() throws IOException {
@@ -41,6 +43,9 @@ public class Streams {
             prname.accept(pr);
         }
         Function<Product, Double> getprice= Product::getMaxRetailPrice;
+        Map<String,Long> ProductCatagory=products.stream().collect(Collectors.groupingBy(Product::getCategory,Collectors.counting()));
+        System.out.println(ProductCatagory);
+        Map<String,List<String>> namesByCategory=products.stream().collect(Collectors.groupingBy(Product::getCategory,Collectors.mapping(Product::getName,Collectors.toList())));
 
 
 
