@@ -46,6 +46,7 @@ public class Streams {
         Map<String,Long> ProductCatagory=products.stream().collect(Collectors.groupingBy(Product::getCategory,Collectors.counting()));
         System.out.println(ProductCatagory);
         Map<String,List<String>> namesByCategory=products.stream().collect(Collectors.groupingBy(Product::getCategory,Collectors.mapping(Product::getName,Collectors.toList())));
+        System.out.println(namesByCategory);
 
 
 
