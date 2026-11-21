@@ -47,6 +47,8 @@ public class Streams {
         System.out.println(ProductCatagory);
         Map<String,List<String>> namesByCategory=products.stream().collect(Collectors.groupingBy(Product::getCategory,Collectors.mapping(Product::getName,Collectors.toList())));
         System.out.println(namesByCategory);
+        Map<Boolean,List<Product>> avalibility=products.stream().collect(Collectors.partitioningBy(Product::isAvailable,Collectors.toList()));
+        System.out.println(avalibility);
 
 
 
