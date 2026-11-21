@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Streams {
@@ -39,6 +40,8 @@ public class Streams {
         for (Product pr:products){
             prname.accept(pr);
         }
+        Function<Product, Double> getprice= Product::getMaxRetailPrice;
+
 
 
     }
