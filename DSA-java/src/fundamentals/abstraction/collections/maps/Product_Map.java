@@ -2,9 +2,7 @@ package fundamentals.abstraction.collections.maps;
 
 import fundamentals.abstraction.collections.sets.product;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Product_Map {
     static void main() {
@@ -35,5 +33,19 @@ public class Product_Map {
 
         System.out.println(products.entrySet());
         System.out.println(products.keySet());
+        Map<Integer,Integer> hashing=new TreeMap<>();
+        int[] numbers={10,20,1,1,1,1,1,3,4,5,5,6,7,8,6,6,4,34,33,4,5,7,7,8};
+        for(int num:numbers){
+            hashing.put(num,hashing.getOrDefault(num,0)+1);
+        }
+        System.out.println(hashing.toString());
+        String name="Pranay";
+        Map<Character,Integer> character_Hashing=new TreeMap<>();
+        for(int i=0;i<name.length();i++){
+            char c=name.charAt(i);
+            character_Hashing.put(c,character_Hashing.getOrDefault(c,0)+1);
+        }
+        System.out.println(character_Hashing.toString());
+
     }
 }
